@@ -1,0 +1,208 @@
+/* Existing CSS */
+body {
+    background: url('bgpurple.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Space Grotesk", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #16181b;
+}
+
+header {
+    background-color: #16053a;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 1rem;
+}
+
+header .logo img {
+    height: 50px; /* Adjust the height as needed */
+    width: auto;
+}
+
+header h1 {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    width: 200px;
+}
+
+#GamingMouse, #GamingKeyboard, #GamingMonitor, #GamingHeadphones, #GamingChair {
+    font-weight: bold;
+    padding: 1em;
+    text-align: right;
+    color: #181a1a;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 1px 5px #00000099;
+    border-radius: 10px;
+    background-size: cover;
+    position: relative;
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+    transform: rotate3d(0);
+}
+
+#GamingMouse {
+    background-image: url(bgicon.jpeg);
+}
+
+#GamingKeyboard {
+    background-image: url(bgicon.jpeg);
+}
+
+#GamingMonitor {
+    background-image: url(bgicon.jpeg);
+}
+
+#GamingHeadphones {
+    background-image: url(bgicon.jpeg);
+}
+
+#GamingChair {
+    background-image: url(bgicon.jpeg);
+}
+
+.product:hover, .card:hover {
+    transition-duration: 150ms;
+    box-shadow: 0 5px 20px 5px #00000044;
+}
+
+.product .glow, .card .glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+:root {
+    --primary-color: #c8dc71;
+    --gradient-color: linear-gradient(180deg, #d2ff00 0%, #00d2ff 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Custom */
+
+h1 {
+    color: #dbd56e;
+    background: -webkit-linear-gradient(25deg, #eee, #333);
+    -webkit-background-clip: text;
+    background-clip: text; /* Added standard property for compatibility */
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    animation: type 1.5s steps(90) 1.5s 1 normal both;
+    position: relative;
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Animation for the #home element */
+#home {
+    animation: fadeIn 2s ease-in-out infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* New Hover Effect */
+#GamingMouse:hover, #GamingKeyboard:hover, #GamingMonitor:hover, #GamingHeadphones:hover, #GamingChair:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.highlight-text {
+    color: rgb(231, 160, 255);
+    font-size: 1.5em; /* Adjust the size as needed */
+}

@@ -1,0 +1,126 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #001e4d, #004d80);
+    color: #f2f2f2;
+}
+
+/* App Container */
+.app {
+    background: #ffffff;
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* Heading */
+.app h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+    color: #001e4d;
+    font-weight: 700;
+    border-bottom: 2px solid #004d80;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+/* Quiz Section */
+.quiz {
+    padding: 20px 0;
+}
+
+/* Quiz Heading */
+.quiz h2 {
+    font-size: 20px;
+    color: #001e4d;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+    background: #ffffff;
+    color: #222222;
+    font-weight: 500;
+    width: 100%;
+    border: 2px solid #004d80;
+    margin: 10px 0;
+    padding: 15px;
+    text-align: left;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover:not([disabled]) {
+    background: #004d80;
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    background: #e0e0e0;
+    color: #888888;
+    border: 2px solid #888888;
+}
+
+/* Next Button */
+#next-btn {
+    background: #001e4d;
+    color: #ffffff;
+    font-weight: 600;
+    width: 160px;
+    border: 0;
+    padding: 12px;
+    margin: 20px auto;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#next-btn:hover {
+    background: #004d80;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Correct/Incorrect Answers */
+.correct {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.incorrect {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+/* Celebration Effect */
+.confetti-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999; /* Make sure it's on top of other content */
+    display: none; /* Hidden by default */
+}
